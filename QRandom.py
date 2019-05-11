@@ -1,6 +1,15 @@
 # Author: Syed Haseeb Shah
 # Mapping Algorithm Author : Adam Luchjenbroers
 
+%matplotlib inline
+# Importing standard Qiskit libraries and configuring account
+from qiskit import QuantumRegister, ClassicalRegister
+from qiskit import QuantumCircuit, execute, Aer, IBMQ
+from qiskit.compiler import transpile, assemble
+from qiskit.tools.jupyter import *
+# Loading your IBM Q account(s)
+IBMQ.load_accounts()
+
 def real_map(value, leftMin, leftMax, rightMin, rightMax):
     # Maps one range to another
     # Figure out how 'wide' each range is
