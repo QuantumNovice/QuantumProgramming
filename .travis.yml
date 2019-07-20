@@ -3,4 +3,4 @@ python:3.7
 install:
   - pip  install matplotlib qiskit 
 script:
-  - mypy --ignore-missing-imports .
+  - echo "Done"
